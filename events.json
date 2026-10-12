@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Hackathon 2026",
+    "category": "Tech",
+    "date": "2026-03-20",
+    "description": "24-hour university coding sprint focused on web frameworks and AI integration."
+  },
+  {
+    "id": 2,
+    "title": "Campus Orientation",
+    "category": "General",
+    "date": "2026-03-15",
+    "description": "Welcoming incoming students with campus tours and informational sessions."
+  },
+  {
+    "id": 3,
+    "title": "Web Dev Workshop",
+    "category": "Tech",
+    "date": "2026-04-05",
+    "description": "Hands-on masterclass covering modern JavaScript, Fetch API, and responsive CSS."
+  },
+  {
+    "id": 4,
+    "title": "Cultural Fest",
+    "category": "Cultural",
+    "date": "2026-04-12",
+    "description": "Annual university fest featuring music, drama, dance performances, and art stalls."
+  },
+  {
+    "id": 5,
+    "title": "AI & Robotics Seminar",
+    "category": "Tech",
+    "date": "2026-04-18",
+    "description": "Guest lectures by industry researchers on autonomous agents and neural networks."
+  },
+  {
+    "id": 6,
+    "title": "Open Mic & Poetry Night",
+    "category": "Cultural",
+    "date": "2026-04-22",
+    "description": "An open stage evening celebrating literature, acoustic music, and spoken poetry."
+  }
+]

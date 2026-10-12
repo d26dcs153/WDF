@@ -1,0 +1,797 @@
+/* =========================================================
+   GLOBAL THEME Same colors, typography, header, navbar and footer on all pages
+========================================================= */
+:root {
+    --primary: #1E3A8A;
+    --primary-light: #2563EB;
+    --accent: #38BDF8;
+    --background: #F8FAFC;
+    --surface: #FFFFFF;
+    --text: #1F2937;
+    --muted: #6B7280;
+    --border: #E5E7EB;
+    --shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+}
+
+main {
+    flex: 1;
+}
+/* =========================================================
+   COMMON HEADER + NAVBAR
+========================================================= */
+header {
+    background: var(--primary);
+    color: #FFFFFF;
+    padding: 20px 30px;
+    border-bottom: 4px solid var(--primary-light);
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 9px 16px;
+    color: #FFFFFF;
+    background: transparent;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    background: var(--accent);
+    color: var(--primary);
+    border-color: var(--accent);
+    transform: translateY(-2px);
+}
+/* =========================================================
+   COMMON FOOTER
+========================================================= */
+footer {
+    margin-top: auto;
+    padding: 18px;
+    background: var(--primary);
+    color: #FFFFFF;
+    text-align: center;
+    border-top: 2px solid var(--primary-light);
+}
+/* =========================================================
+   COMMON PAGE CONTENT
+========================================================= */
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+main h2,
+body > h1,
+main > h1 {
+    color: var(--primary-light);
+}
+
+main h2 {
+    margin-bottom: 25px;
+}
+
+main h3 {
+    color: var(--primary);
+}
+
+main p {
+    line-height: 1.7;
+}
+/* =========================================================
+   HOME PAGE
+========================================================= */
+.home {
+    background: var(--background);
+    color: var(--text);
+}
+
+.home header,
+.home footer {
+    background: var(--primary);
+}
+
+.home main {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.home main h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.home main p {
+    width: 70%;
+    margin: 15px auto;
+    font-size: 18px;
+}
+
+.home main h3 {
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.home button {
+    margin: 20px 10px;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary-light);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.home button:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+/* =========================================================
+   ABOUT PAGE
+========================================================= */
+.about {
+    background: var(--background);
+    color: var(--text);
+}
+
+.about main {
+    width: 75%;
+    padding: 40px;
+    background: var(--surface);
+    border-left: 6px solid var(--primary-light);
+    box-shadow: var(--shadow);
+}
+
+.about main h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about main h3 {
+    margin: 35px 0 15px;
+    color: var(--primary);
+}
+
+.about main p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+/* =========================================================
+   ADMIN PAGE
+========================================================= */
+.admin {
+    background: var(--background);
+    color: var(--text);
+}
+
+.admin main {
+    width: 70%;
+    padding: 35px;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.admin > h1 {
+    margin: 35px 0 10px;
+    text-align: center;
+    font-size: 42px;
+    color: var(--primary-light);
+}
+
+.admin main h2 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+}
+
+.admin ul {
+    list-style: none;
+}
+
+.admin li {
+    margin: 15px 0;
+    padding: 15px 20px;
+    background: var(--background);
+    border-left: 6px solid var(--primary-light);
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.admin li:hover {
+    background: #E5E7EB;
+    transform: translateX(8px);
+}
+/* =========================================================
+   CONTACT PAGE
+========================================================= */
+.contact {
+    background: var(--background);
+    color: var(--text);
+}
+
+.contact > h1 {
+    margin: 35px 0;
+    text-align: center;
+    font-size: 40px;
+    color: var(--primary-light);
+}
+
+.contact main {
+    width: 45%;
+    padding: 35px;
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.contact form,
+.login form,
+.register form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label,
+.login label,
+.register label {
+    margin: 12px 0 6px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea,
+.login input,
+.register input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid var(--border);
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.login input:focus,
+.register input:focus {
+    border-color: var(--primary-light);
+}
+
+.contact textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact button,
+.login button,
+.register button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: var(--primary-light);
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.contact button:hover,
+.login button:hover,
+.register button:hover {
+    background: var(--primary);
+    transform: translateY(-2px);
+}
+/* =========================================================
+   DASHBOARD PAGE
+========================================================= */
+.dashboard {
+    background: var(--background);
+    color: var(--text);
+}
+
+.dashboard main {
+    width: 90%;
+}
+
+.dashboard h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 35px;
+    color: var(--primary-light);
+}
+
+.dashboard section {
+    background: var(--surface);
+    margin: 20px 0;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 6px solid var(--primary-light);
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.dashboard section:nth-of-type(2),
+.dashboard section:nth-of-type(3) {
+    border-left-color: var(--primary-light);
+}
+
+.dashboard section:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard section h3 {
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.dashboard section p {
+    color: var(--text);
+}
+/* =========================================================
+   EVENTS PAGE
+========================================================= */
+.events {
+    background: var(--background);
+    color: var(--text);
+}
+
+.events main {
+    width: 85%;
+}
+
+.events h2 {
+    text-align: center;
+    font-size: 38px;
+    color: var(--primary-light);
+    margin-bottom: 35px;
+}
+
+.events article {
+    background: var(--surface);
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 6px solid var(--primary-light);
+    box-shadow: var(--shadow);
+    transition: 0.3s ease;
+}
+
+.events article:hover {
+    transform: translateY(-4px);
+}
+
+.events article h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.events article p {
+    font-size: 17px;
+}
+/* =========================================================
+   FAQ PAGE
+========================================================= */
+.faq {
+    background: var(--background);
+    color: var(--text);
+}
+
+.faq > h1 {
+    text-align: center;
+    margin: 35px 0 15px;
+    font-size: 42px;
+    color: var(--primary-light);
+}
+
+.faq main {
+    width: 80%;
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary);
+}
+
+.faq h3 {
+    background: #E0F2FE;
+    padding: 15px;
+    border-left: 6px solid var(--primary-light);
+    border-radius: 6px;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.faq p {
+    background: var(--surface);
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 0 0 6px 6px;
+    box-shadow: var(--shadow);
+    line-height: 1.6;
+}
+/* =========================================================
+   PROFILE PAGE
+========================================================= */
+.profile {
+    background: var(--background);
+    color: var(--text);
+}
+
+.profile > h1 {
+    margin: 35px 0 20px;
+    text-align: center;
+    font-size: 40px;
+    color: var(--primary-light);
+}
+
+.profile main {
+    width: 40%;
+    padding: 35px;
+    text-align: center;
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+.profile main h2 {
+    color: var(--primary-light);
+}
+
+.profile main p {
+    margin: 12px 0;
+    padding: 14px;
+    font-size: 17px;
+    text-align: left;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.profile button {
+    margin-top: 25px;
+}
+.error-msg {
+  color: #DC2626;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.radio-group {
+  border: none;
+  padding: 0;
+  margin: 12px 0 4px;
+}
+
+.radio-group legend {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.radio-group label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 0 4px;
+}
+
+.checkbox-group input {
+  width: auto;
+}
+/* =========================================================
+   LOGIN PAGE
+========================================================= */
+.login {
+    background: var(--background);
+    color: var(--text);
+}
+
+.login h2 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--primary-light);
+}
+
+.login main {
+    width: 35%;
+    padding: 40px;
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+/* =========================================================
+   REGISTER PAGE
+========================================================= */
+
+/* Base page styling */
+body.register {
+    background-color: var(--background);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Center the card and make it visually distinct */
+.register main {
+    width: 100%;
+    max-width: 550px;             /* Better responsive sizing than a rigid 45% */
+    margin: 40px auto;             /* Centers the card horizontally with spacing top & bottom */
+    padding: 35px;
+    background-color: var(--surface) !important; /* Forces pure white (#FFFFFF) */
+    border: 1px solid var(--border);             /* Adds definition between #F8FAFC and #FFFFFF */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08); /* Soft, elevated card shadow */
+}
+
+.register h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: var(--primary-light);
+}
+.register nav a {
+    background: transparent;
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 16px;
+}
+/* Keeps the active page link highlighted */
+.register nav a.active  {
+    background: var(--primary-light) !important ; /* Or var(--accent) if you prefer light blue */
+    color: #ffffff;                    /* Ensures text stays readable */
+    border-radius: 6px;               /* Optional: smooth rounded edges */
+}
+
+/* Hover effect for links */
+.register nav a:hover {
+    background: var(--accent);
+    color: #ffffff;
+}
+/* =========================================================
+   DARK THEME
+========================================================= */
+body.dark-theme {
+    --background: #121212;
+    --surface: #1E1E1E;
+    --text: #F1F1F1;
+    --muted: #B0B0B0;
+    --border: #444444;
+    background: var(--background);
+    color: var(--text);
+}
+
+body.dark-theme main,
+body.dark-theme .contact main,
+body.dark-theme .login main,
+body.dark-theme .register main,
+body.dark-theme .profile main,
+body.dark-theme .admin main,
+body.dark-theme .dashboard section,
+body.dark-theme .events article,
+body.dark-theme .faq p {
+    background: var(--surface);
+}
+
+body.dark-theme input,
+body.dark-theme textarea {
+    background: #2A2A2A;
+    color: #FFFFFF;
+    border-color: #555555;
+}
+/* =========================================================
+   NOTIFICATION BANNER
+========================================================= */
+.notification-banner {
+    background: var(--primary-light);
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-close-btn {
+    background: none;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/* =========================================================
+   HAMBURGER MENU
+========================================================= */
+/* Container to keep the Title and Hamburger aligned on the same row */
+header .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Base Hamburger Button Style (Hidden on desktop by default) */
+.hamburger-btn {
+  display: none;
+  font-size: 2rem;
+  color: #FFFFFF;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Desktop Navigation (Horizontal row) */
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 9px 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+/* ==========================================
+   Mobile Layout Breakpoint (Under 768px)
+   ========================================== */
+@media (max-width: 768px) {
+  /* 1. Show the 3-line hamburger icon on mobile */
+  .hamburger-btn {
+    display: block;
+  }
+
+  /* 2. Hide the navbar by default on mobile */
+  header nav {
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    margin-top: 15px;
+    gap: 8px;
+  }
+
+  /* 3. Show vertical nav when clicked/toggled via JS */
+  header nav.nav-active {
+    display: flex;
+  }
+
+  header nav a {
+    width: 100%;
+    text-align: left;
+    padding: 12px 16px;
+  }
+}
+/* =========================================================
+   COLLAPSIBLE FAQ
+========================================================= */
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    background: #E0F2FE;
+    color: var(--primary);
+    border: none;
+    border-left: 4px solid var(--primary-light);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 12px;
+    background: var(--surface);
+    border-left: 3px solid var(--primary-light);
+}
+/* =========================================================
+   IMAGE / CONTENT SLIDER
+========================================================= */
+.slider-container {
+    position: relative;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide {
+    display: none;
+    padding: 40px;
+    background: var(--surface);
+    border: 2px solid var(--border);
+    border-radius: 8px;
+}
+
+.slide.active-slide {
+    display: block;
+}
+
+.slider-controls {
+    margin-top: 10px;
+}
+/* =========================================================
+   MODAL POPUP
+========================================================= */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-box {
+    background: var(--surface);
+    padding: 24px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+    color: var(--text);
+}

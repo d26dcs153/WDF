@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="design.css">
+    <title>Profile</title>
+</head>
+<body class="profile">
+<header>
+    <div class="nav-container">
+    <h1>StudentHub</h1>
+    
+    <!-- Three-line Hamburger Button (HTML entity &#9776;) -->
+    <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation">&#9776;</button>
+  </div>
+  <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="register.html">Register</a>
+      <a href="login.html">Login</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="events.html">Events</a>
+      <a href="profile.html" class="active">Profile</a>
+      <a href="contact.html">Contact</a>
+      <a href="admin.html">Admin</a>
+      <a href="faq.html">FAQ</a>
+    </nav>
+</header>
+<h1>Student Profile</h1>
+<main>
+    <h2>Profile Details</h2>
+    <div id="profile-container" style="background: var(--surface, #fff); padding: 20px; border-radius: 8px; border: 1px solid #ccc; max-width: 450px;">
+        <p><strong>Name:</strong> <span id="profile-name">Loading...</span></p>
+        <p><strong>ID:</strong> <span id="profile-id">Loading...</span></p>
+        <p><strong>Email:</strong> <span id="profile-email">Loading...</span></p>
+        <p><strong>Course:</strong> <span id="profile-course">Loading...</span></p>
+        <p><strong>Year:</strong> <span id="profile-year">Loading...</span></p>
+        <button id="edit-profile-btn" style="padding: 8px 16px; margin-top: 10px; cursor: pointer;">Edit Profile</button>
+    </div>
+</main>
+<footer>
+    <p>Made by Niraja</p>
+</footer>
+<script src="javastuff.js"></script>
+</body>
+</html>

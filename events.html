@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="design.css">
+<title>Events</title>
+</head>
+<body class="events">
+<header>
+    <div class="nav-container">
+    <h1>StudentHub</h1>
+    
+    <!-- Three-line Hamburger Button (HTML entity &#9776;) -->
+    <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle navigation">&#9776;</button>
+  </div>
+  <nav>
+      <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="events.html" class="active">Events</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="admin.html">Admin</a>
+        <a href="faq.html">FAQ</a>
+
+    </nav>
+</header>
+<main>
+  <h2>Events</h2>
+  <!-- 1. Controls Bar -->
+  <div class="controls-bar" style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+    <input type="text" id="searchInput" placeholder="Search events..." style="padding: 8px; flex: 1;">   
+    <select id="categoryFilter" style="padding: 8px;">
+      <option value="All">All Categories</option>
+      <option value="Tech">Tech</option>
+      <option value="General">General</option>
+      <option value="Cultural">Cultural</option>
+    </select>
+    <select id="sortSelect" style="padding: 8px;">
+      <option value="date-asc">Date (Earliest First)</option>
+      <option value="date-desc">Date (Latest First)</option>
+      <option value="title-asc">Title (A-Z)</option>
+      <option value="title-desc">Title (Z-A)</option>
+    </select>
+  </div>
+  <!-- 2. Target Container for Dynamic Data -->
+  <div id="eventsContainer"></div>
+  <!-- 3. Pagination Controls -->
+  <div class="pagination-controls" style="display: flex; justify-content: center; align-items: center; gap: 15px; margin-top: 25px;">
+    <button id="prevPageBtn" style="padding: 8px 16px;">Previous</button>
+    <span id="pageInfo"></span>
+    <button id="nextPageBtn" style="padding: 8px 16px;">Next</button>
+  </div>
+</main>
+<footer>
+<p>Made by Niraja</p>
+</footer>
+<script src="javastuff.js"></script>
+</body>
+</html>
